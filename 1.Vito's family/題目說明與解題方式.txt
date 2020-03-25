@@ -1,0 +1,12 @@
+第一行輸入為接下來共有幾筆測資
+接下來的測資第一個數為Vito共有幾個親戚
+接在第一個數後的數字為各個親戚所住的street number
+
+親戚(relatives)的domain為(0<r<500)
+街道號碼(street number)的domain為(0<Si<30000)
+
+輸出為某一街道號碼(能與各親戚住最近)與各親戚的最短距離和
+
+可使用#include <algorithm> 做sorting
+
+利用中位數求最短距離和
