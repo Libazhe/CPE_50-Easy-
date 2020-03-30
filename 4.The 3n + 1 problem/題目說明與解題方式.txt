@@ -16,8 +16,8 @@
 
 而input是22時，cycle長度(cycle length)是16
 
-此提要求的是計算將介於i跟j之間的所有數放進algorithm時求出的cycle length
-再找出cycle length較大的那一個值( maximum cycle length )
+此題要求的是計算將介於i跟j之間的所有數放進algorithm時求出的cycle length
+再找出cycle length最大的那一個值( maximum cycle length )
 
 所以依題目要求輸出是:
-先輸出i 再輸出j 再輸出cycle length較大的那一個值( maximum cycle length )
+先輸出i 再輸出j 再輸出cycle length最大的那一個值( maximum cycle length )
