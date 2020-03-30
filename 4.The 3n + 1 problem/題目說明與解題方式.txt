@@ -1,0 +1,23 @@
+此題每一筆測資都會包含兩個數(i和j)且domain為(0<i,j<10000)
+
+題目敘述中有提到"You can assume that no operation overflow a 32-bit integer."
+因此不用擔心數值過大(大數問題)，尤其大數問題用C++處理起來特別麻煩
+
+在題目敘述中有給一個algorithm:
+1. input n      (讀入n)
+2. print n      (印出n)
+3. if n = 1 then STOP   (當n是1時停止)
+4. 	if n is odd then n ←− 3n + 1    (如果n是奇數則n=3n+1)
+5. 	else n ←− n/2       (如果不是奇數則將n除以2)
+6. GOTO 2             (回到步驟2)
+
+假設input是22，則會產生一個cycle:
+22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
+
+而input是22時，cycle長度(cycle length)是16
+
+此提要求的是計算將介於i跟j之間的所有數放進algorithm時求出的cycle length
+再找出cycle length較大的那一個值( maximum cycle length )
+
+所以依題目要求輸出是:
+先輸出i 再輸出j 再輸出cycle length較大的那一個值( maximum cycle length )
